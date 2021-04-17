@@ -1,0 +1,9 @@
+peticion con ciertos atributos
+respuesta con atributos tambien, tipo de dato, texto por ej, etc
+
+MÉTODOS que quiero hacer
+ESTADO como ha ido la operación
+CUERPO lo que el servidor devuelve
+
+MÉTODOS: 
+    PUT --> 
