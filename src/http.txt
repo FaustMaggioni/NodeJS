@@ -5,5 +5,22 @@ MÉTODOS que quiero hacer
 ESTADO como ha ido la operación
 CUERPO lo que el servidor devuelve
 
-MÉTODOS: 
-    PUT --> 
+MÉTODOS
+Principales: GET, PUT, DELETE, POST, PATCH, OPTIONS 
+    GET --> buscar info del servidor.
+    POST --> añadir info al servidor.
+    PUT --> reemplazar info en el servidor.
+    PATCH --> actualizar parte de información.
+    DELETE --> eliminar info del servidor.
+    OPTIONS --> pedir info sobre los métodos, saber si se pueden utilizar
+
+CABECERAS
+Información contextual de la peticion.
+    COOKIE --> Compartir info entre peticiones
+    
+ESTADO numero que indica que pasó con la petición.
+
+Peticiones:
+Cuerpo: La info de la peticion.
+ejemplo, los datos que queremos añadir.
+
