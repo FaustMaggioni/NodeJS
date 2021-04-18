@@ -22,6 +22,9 @@ router.delete('/message', (req, res) => {
 })
 
 router.get('/message', (req, res) => {
+    res.header({
+        'custom-header': 'Valor personalizado'
+    })
     console.log(req.headers)
 })
 
