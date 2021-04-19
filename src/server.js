@@ -10,22 +10,22 @@ app.use(express.urlencoded({
 
 app.use(router);
 
+
+
 router.post('/message', (req, res) => {
     console.log(req.query)
-    console.log(req.body)
-    res.send('Mensaje ' + req.body.text + ' añadido')
-})
-
-router.delete('/message', (req, res) => {
-    console.log(req.query)
-    res.send('Lista de mensajes')
+    res.status(201).send({
+        error: '', body: 'Creado correctamente'
+    })
 })
 
 router.get('/message', (req, res) => {
+    console.log("X")
     res.header({
         'custom-header': 'Valor personalizado'
     })
-    console.log(req.headers)
+    res.send('Mensaje')
+    console.log("headers", req.headers)
 })
 
 app.listen(3000);
